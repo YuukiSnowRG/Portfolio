@@ -21,7 +21,7 @@
     @apply bg-violet-400;
   }
   h1 {
-    @apply text-2xl text-black;
+    @apply text-xl text-black;
   }
   /* o @ apply serve para voce aplicar classes tailwind
   oque seria feito com css normal */
@@ -37,4 +37,7 @@ body {
     )
     rgb(var(--background-start-rgb));
   font-family: "Cascadia Code";
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }

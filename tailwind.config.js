@@ -20,7 +20,11 @@ module.exports = {
       '5': '32px',
       '6': '48px',
     },
-    extend: {}
+    extend: {
+      height: {
+        'spacer': '68px',
+      }
+    }
   },
   plugins: [],
 }
