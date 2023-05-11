@@ -23,6 +23,7 @@
   h1 {
     @apply text-xl text-black;
   }
+  
   /* o @ apply serve para voce aplicar classes tailwind
   oque seria feito com css normal */
 }

@@ -1,0 +1,40 @@
+{
+  "techs": [
+    {
+      "id": "HTML",
+      "title": "HyperText Markup Language",
+      "description": "Linguagem de Marcação utilizada na construção de paginas da Web",
+      "image": "icons8-html.svg"
+    },
+    {
+      "id": "CSS",
+      "title": "Cascading Style Sheets",
+      "description": "Mecanismo para adicionar estilos a uma página web",
+      "image": "/icons8-css.svg"
+    },
+    {
+      "id": "SASS",
+      "title": "Syntactically Awesome Style Sheets",
+      "description": "Extensão do CSS, CSS com super poderes",
+      "image": "/icons8-sass.svg"
+    },
+    {
+      "id": "Tailwind",
+      "title": "Tailwind CSS",
+      "description": "Framework CSS usado para auxiliar e facilitar o processo de estilizar websites",
+      "image": "/icons8-tailwind-css.svg"
+    },
+    {
+      "id": "React",
+      "title": "React",
+      "description": "Biblioteca Javascript usada para construir interfaces de usuario",
+      "image": "/icons8-react.svg"
+    },
+    {
+      "id": "GIT",
+      "title": "GIT",
+      "description": "É um sistema de controle de versões ",
+      "image": "/icons8-git.svg"
+    }
+  ]
+}

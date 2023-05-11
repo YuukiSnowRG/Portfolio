@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Header() {
   return (<>
-    <header className='fixed top-0 left-0 right-0 justify-between w-screen '>
+    <header className='fixed top-0 left-0 right-0 justify-between w-screen p-[10px] m-[-10px] bg-[#CFB3DA]'>
 
     <div className='text-xs sm:text-base md:text-lg lg:text-xl
       flex flex-row items-center justify-between'>

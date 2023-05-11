@@ -23,7 +23,12 @@ module.exports = {
     extend: {
       height: {
         'spacer': '68px',
+      },
+      maxWidth: {
+        'half': '50%',
+        'quarter': '25%',
       }
+      
     }
   },
   plugins: [],
