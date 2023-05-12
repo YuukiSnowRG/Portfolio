@@ -35,6 +35,33 @@
       "title": "GIT",
       "description": "É um sistema de controle de versões ",
       "image": "/icons8-git.svg"
+    },
+    {
+      "id": "NEXTJS",
+      "title": "NEXT",
+      "description": "Framework usado com a biblioteca React",
+      "image": "/nextjs.svg"
+    },
+    {
+      "id": "Em Breve",
+      "title": "Outras",
+      "description": "E muitas outras que pretendo aprender!",
+      "image": "/ellipsis.svg"
+    }
+  ],
+
+  "projects": [
+    {
+      "id": "events-app",
+      "title": "Events App",
+      "link": "https://github.com/YuukiSnowRG/events-app",
+      "image": "/events-app-screenshot.png"
+    },
+    {
+      "id": "em-breve",
+      "title": "E muitos outros projetos por vir!",
+      "link": "https://github.com/YuukiSnowRG",
+      "image": "/EmBreve.png"
     }
   ]
 }

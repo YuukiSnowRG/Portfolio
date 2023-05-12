@@ -1,13 +1,12 @@
 import React from 'react'
 import Image from 'next/image'
-import { TechsData } from '@/types/techs'
 
 
 
-export default function MainSection({ techs }:TechsData) {
+export default function MainSection() {
   return (
     <> 
-    <div className='flex flex-row items-center justify-around'> {/* container flex para posicionar um ao lado do outro */}
+    <div className='flex flex-row items-center justify-around mt-0'> {/* container flex para posicionar um ao lado do outro */}
       <div> {/* container grande que fica na esquerda */}
         <h1>Olá sou o Yuuki!</h1>
         <h2>Desenvolvedor Front-end</h2>
@@ -29,24 +28,9 @@ export default function MainSection({ techs }:TechsData) {
       <p>Placeholder coisas sobre mim</p>
      </div>
 
-     <section>Techs
-      <div>
-        <ul className='flex flex-row items-stretch justify-center flex-wrap gap-[35px] '>
-          {techs?.map((tech:any) => (
-          <li key={tech.id} className='p-[30px] rounded-[15px] bg-violet-600 text-center basis-[25%] shrink-0 grow-0'>
-            <div className=' text-center flex flex-col items-center '>
-            <Image src={tech.image} alt={tech.title} width='50' height='50'></Image>
-              <p>{tech.id}</p>
-              <p>{tech.description}</p>
-            </div>
-          </li>
-          ))}
-          
-        </ul>
-      </div>
-     </section>
+     
     </>
   )
 }
 /* #CFB3DA */
-/* special thanks to https://icons8.com/ */
+
