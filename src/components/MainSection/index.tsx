@@ -1,35 +1,40 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 
 
 export default function MainSection() {
   return (
-    <> 
-    <div className='flex flex-row items-center justify-around mt-0'> {/* container flex para posicionar um ao lado do outro */}
-      <div> {/* container grande que fica na esquerda */}
-        <h1>Olá sou o Yuuki!</h1>
-        <h2>Desenvolvedor Front-end</h2>
-        <a href="insira whats aqui">
-          <button className='flex flex-row bg-violet-600 rounded-full border-100 px-1 py-1 items-center'>
-          <p>Converse comigo!!&nbsp; </p> 
-          
-          <Image src='/whatsapp.svg' alt='Whatsapp Icon' width='20' height='20'></Image>
-          </button>
-        </a>
-      </div>
+    <section id="Home" className='mt-0'>
+      <div className='flex flex-row items-center justify-evenly'>
+        <div> {/* container grande que fica na esquerda */}
+          <h1 className="text-3xl bold">Olá sou o Yuuki!</h1>
+          <h2 className="text-xl bold">Desenvolvedor Front-end</h2>
+          <Link href="https://wa.me/message/EWNIIZZRWYKAK1">
+            <button className='flex flex-row bg-violet-600 rounded-full border-100 px-1 py-1 items-center'>
+            <p className="mr-[10px]">Converse comigo!!</p> 
+            
+            <Image src='/whatsapp.svg' alt='Whatsapp Icon' width='20' height='20'></Image>
+            </button>
+          </Link>
+        </div>
       <div> {/* container da imagem que fica a direita */}
-      <Image src="/embreve.gif" alt="Em breve Placeholder" width='500' height='500' />
+        <Image src="/programming.png" alt="Em breve Placeholder" width='500' height='500' />
+      </div>
+      </div>
+    <div>
+      <h1 className='flex flex-col items-center text-3xl bold'>Sobre mim</h1>
+      <div className='flex items-center justify-evenly'>
+      <p className='max-w-[500px] text-xl'>Atualmente venho me dedicando a iniciar na carreira de front end
+        trabalhando com React JS, estou tambem aprendendo varias ferramentas como 
+        Tailwind, SASS, NextJS. Pretendo criar muitos projetos e aperfeiçoar minhas habilidades
+        e me aprofundar ainda mais em varias outras tecnologias!
+      </p>
+        <Image className='object-scale-down' src='/konataokay.png' alt='Okay sign' width='400' height='400'></Image>
+      </div>
     </div>
-    </div>
-     
-     <div>{/* container do sobre mim contendo informações basicas de auto promoção */}
-      <h1>Sobre mim</h1>
-      <p>Placeholder coisas sobre mim</p>
-     </div>
-
-     
-    </>
+    </section>
   )
 }
 /* #CFB3DA */

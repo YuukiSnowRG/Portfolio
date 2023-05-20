@@ -43,6 +43,12 @@
       "image": "/nextjs.svg"
     },
     {
+      "id": "TypeScript",
+      "title": "Typescript",
+      "description": "Auxilio no desenvolvimento JS com tipagem",
+      "image": "/typescript.svg"
+    },
+    {
       "id": "Em Breve",
       "title": "Outras",
       "description": "E muitas outras que pretendo aprender!",
@@ -62,6 +68,26 @@
       "title": "E muitos outros projetos por vir!",
       "link": "https://github.com/YuukiSnowRG",
       "image": "/EmBreve.png"
+    }
+  ],
+  "contacts": [
+    {
+      "id": "Whatsapp",
+      "title": "Whatsapp",
+      "link": "https://wa.me/message/EWNIIZZRWYKAK1",
+      "image": "/whatsapp2.svg"
+    },
+    {
+      "id": "LinkedIn",
+      "title": "LinkedIn",
+      "link": "Link do linkedin",
+      "image": "/linkedin.svg"
+    },
+    {
+      "id": "GitHub",
+      "title": "GitHub",
+      "link": "https://github.com/YuukiSnowRG",
+      "image": "/github.svg"
     }
   ]
 }

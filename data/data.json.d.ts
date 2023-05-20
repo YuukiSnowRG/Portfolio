@@ -1,4 +1,4 @@
-export interface DataTypes {
+export interface JsonData {
   "techs": {
     "id": string;
     "title": string;
@@ -6,6 +6,12 @@ export interface DataTypes {
     "image": string;
   }[],
   "projects": {
+    "id": string;
+    "title": string;
+    "link": string;
+    "image": string;
+  }[],
+  "contacts": {
     "id": string;
     "title": string;
     "link": string;

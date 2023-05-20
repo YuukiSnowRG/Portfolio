@@ -1,17 +1,18 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 export default function Header() {
   return (<>
-    <header className='fixed top-0 left-0 right-0 justify-between w-screen p-[10px] m-[-10px] bg-[#CFB3DA]'>
+    <header className='fixed top-0 left-0 right-0 justify-between w-screen p-[10px] m-[-10px] bg-[#A78BFA]'>
 
     <div className='text-xs sm:text-base md:text-lg lg:text-xl
       flex flex-row items-center justify-between'>
 
-      <a href='' className='flex flex-row items-center gap-2'>
+      <Link href='https://github.com/YuukiSnowRG' className='flex flex-row items-center gap-2'>
           <Image src="snow.svg" alt="" width={50} height={50}/>
           <h1>Yuuki</h1>
-      </a>
+      </Link>
 
       <nav className='
         flex flex-row items-center justify-between mr-6'
@@ -30,16 +31,15 @@ export default function Header() {
           theme -> screens which means that it is fully customizable*/}
         
         <ul className='flex flex-row gap-5 justify-end items-center'>
-          <li><a href="">Home</a></li>
+          <li><Link href="#Home">Home</Link></li>
           {/* mb-1 aka margin-bottom it defines margin bottom to
           what is defined as 1 on the tailwing config theme -> spacing
           AKA 8px, the 1 is called the argument of the class while mb
           is the class */}
-          <li><a href="">Techs</a></li>
+          <li><Link href="#Techs">Techs</Link></li>
           {/* we can also directly inject arbitrary values "bg-[#da55a3]" */}
-          <li><a href="">Projects</a></li>
-          <li><a href="">Contact Me</a></li>
-          <li><a href="">Contact Links</a></li>
+          <li><Link href="#Projects">Projetos</Link></li>
+          <li><Link href="#Contacts">Contatos</Link></li>
         </ul>
     </nav>
 
