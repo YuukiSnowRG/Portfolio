@@ -29,7 +29,7 @@ export default function MainSection() {
       <p className='max-w-[500px] text-xl'>Atualmente venho me dedicando a iniciar na carreira de front end
         trabalhando com React JS, estou tambem aprendendo varias ferramentas como 
         Tailwind, SASS, NextJS. Pretendo criar muitos projetos e aperfeiçoar minhas habilidades
-        e me aprofundar ainda mais em varias outras tecnologias!
+        e me aprofundar ainda mais em desenvolvimento web!
       </p>
         <Image className='object-scale-down' src='/konataokay.png' alt='Okay sign' width='400' height='400'></Image>
       </div>

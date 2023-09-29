@@ -26,7 +26,7 @@ export default function Home({techs, projects, contacts}:Props) {
 }
 export async function getStaticProps(){
   const {techs, projects, contacts}:JsonData = await require("data/data.json")
-  console.log(techs, projects, contacts)
+  /* console.log(techs, projects, contacts) */ /* debug return */
  return{
   props: {
    techs,
