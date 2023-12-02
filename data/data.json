@@ -64,6 +64,12 @@
       "image": "/events-app-screenshot.png"
     },
     {
+      "id": "portfolio",
+      "title": "Esse mesmo Portfolio",
+      "link": "placeholder",
+      "image": "/portfolioinception.png"
+    },
+    {
       "id": "em-breve",
       "title": "E muitos outros projetos por vir!",
       "link": "https://github.com/YuukiSnowRG",
@@ -80,7 +86,7 @@
     {
       "id": "LinkedIn",
       "title": "LinkedIn",
-      "link": "Link do linkedin",
+      "link": "https://www.linkedin.com/in/robson-gerlach-2424aa238/",
       "image": "/linkedin.svg"
     },
     {
