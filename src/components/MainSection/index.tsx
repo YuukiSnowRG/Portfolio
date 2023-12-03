@@ -15,12 +15,19 @@ export default function MainSection() {
             <button className='flex flex-row bg-violet-600 rounded-full border-100 px-1 py-1 items-center'>
             <p className="mr-[10px]">Converse comigo!!</p> 
             
-            <Image src='/whatsapp.svg' alt='Whatsapp Icon' width='20' height='20'></Image>
+            <Image 
+              src='/whatsapp.svg'
+              alt='Whatsapp Icon'
+              width='20' 
+              height='20'
+              ></Image>
             </button>
           </Link>
         </div>
       <div> {/* container da imagem que fica a direita */}
-        <Image src="/programming.png" alt="Em breve Placeholder" width='500' height='500' />
+        <Image src="/programming.png" alt="Laincore" width='500' height='500'
+         className='rounded-[15px] shadow-[1px_1px_5px] shadow-black border-[2.5px] border-black mb-5'
+         />
       </div>
       </div>
     <div>

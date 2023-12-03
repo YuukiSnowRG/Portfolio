@@ -13,7 +13,7 @@ export default function Projects({projects}:{ projects:JsonData["projects"] }) {
           <li key={project.id}>
             <Link className='' href={project.link}>
               <Image src={project.image} alt={project.title} width='500' height='280'
-              className='rounded-[15px] h-[280px]'>
+              className='rounded-[15px] h-[280px] shadow-[1px_1px_5px] shadow-black border-[2.5px] border-black'>
               </Image>
             </Link>
             <h1 className='flex justify-center mt-[10px]'>{project.title}</h1>
