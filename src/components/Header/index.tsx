@@ -1,52 +1,56 @@
+"use client"
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+import React, { useState } from 'react'
+import { LuMenu, LuX } from "react-icons/lu";
 
 export default function Header() {
-  return (<>
-    <header className='fixed top-0 left-0 right-0 justify-between w-screen p-[10px] m-[-10px] bg-[#A78BFA]'>
+  
+  const [nav, setNav] = useState(false)
+  
+  function handleNav() {
+    setNav(!nav)
+  }
 
-    <div className='text-xs sm:text-base md:text-lg lg:text-xl
-      flex flex-row items-center justify-between'>
+  return (
+      <header className='fixed top-0 left-0 z-10 justify-between w-full bg-[#A78BFA]'>
+      <div 
+        className='text-xs md:text-lg lg:text-xl m-auto
+        flex items-center justify-between ml-1 mt-1'>
 
-      <Link href='https://github.com/YuukiSnowRG' className='flex flex-row items-center gap-2'>
-          <Image src="snow.svg" alt="" width={50} height={50}/>
-          <h1>Yuuki</h1>
-      </Link>
+        <Link href='https://github.com/YuukiSnowRG' className='flex items-center gap-2'>
+            <Image src="snow.svg" alt="" width={50} height={50}/>
+            <h1 className='h-full'>Yuuki</h1>
+        </Link>
+          <ul className='gap-5 h-full mr-1 hidden sm:flex shinytext'>
+            <li><Link href="#Home">Home</Link></li>
+            <li><Link href="#Techs">Techs</Link></li>
+            <li><Link href="#Projects">Projetos</Link></li>
+            <li><Link href="#Contacts">Contatos</Link></li>
+          </ul>
 
-      <nav className='
-        flex flex-row items-center justify-between mr-6'
-        >
-      
-      {/* text means that text will be transformed
-          the syntax is pretty simple to understand
-          and it is possible to customize it */}
-      {/* text-xs = transform the text to extra small
-          text-base = transform the text to base size
-          text-lg = large size
-          text-3xl = probably extra large x 3
-          
-          the base value seems text-xs with other parameters being
-          modified by size of screen set into tailwind config
-          theme -> screens which means that it is fully customizable*/}
-        
-        <ul className='flex flex-row gap-5 justify-end items-center'>
-          <li><Link href="#Home">Home</Link></li>
-          {/* mb-1 aka margin-bottom it defines margin bottom to
-          what is defined as 1 on the tailwing config theme -> spacing
-          AKA 8px, the 1 is called the argument of the class while mb
-          is the class */}
-          <li><Link href="#Techs">Techs</Link></li>
-          {/* we can also directly inject arbitrary values "bg-[#da55a3]" */}
-          <li><Link href="#Projects">Projetos</Link></li>
-          <li><Link href="#Contacts">Contatos</Link></li>
-        </ul>
-    </nav>
-
-    </div>
-
-  </header>
-  <div className='h-spacer'></div> {/* spacer div, a fix for the overlaping elements because of position fixed */}
-  </>
+          {/* Mobile Section */}
+          <div className='sm:hidden z-10'>
+            {nav
+            ? <LuX onClick={handleNav} size={35} style={{ color: 'black' }} />
+            : <LuMenu onClick={handleNav} size={35} style={{ color: 'black' }} />
+            }
+          </div>
+            <div className={
+            nav
+            ?
+            'sm:hidden absolute top-[2.67rem] bottom-0 right-0 left-[60%] w-full h-[140px] bg-[#A78BFA] ease-in duration-300 shadow-[0_0px_5px_3px_rgba(0,0,0,0.7)]'
+            :
+            'sm:hidden absolute top-10 bottom-0 right-0 left-[110%] w-full h-[140px] ease-in duration-300'
+            }>
+            <ul className='text-xl ml-1 shinytext'>
+              <li><Link href="#Home">Home</Link></li>
+              <li><Link href="#Techs">Techs</Link></li>
+              <li><Link href="#Projects">Projetos</Link></li>
+              <li><Link href="#Contacts">Contatos</Link></li>
+            </ul>
+            </div>
+      </div>
+    </header>
   )
 }

@@ -6,14 +6,14 @@ import Link from 'next/link'
 
 export default function MainSection() {
   return (
-    <section id="Home" className='mt-0'>
-      <div className='flex flex-row items-center justify-evenly'>
-        <div> {/* container grande que fica na esquerda */}
-          <h1 className="text-3xl bold">Olá sou o Yuuki!</h1>
-          <h2 className="text-xl bold">Desenvolvedor Front-end</h2>
+    <section id="Home" className='osaker bg-cover bg-center mt-7 bg-fixed top-2'>
+      <div className="flex flex-col h-screen items-center justify-evenly  pt-11 bg-[#A78BFA]/70">
+        <div className="flex flex-col text-center items-center"> 
+          <h1 className="text-2xl font-bold">Olá sou Yuuki!</h1>
+          <h2 className="text-md font-bold">Desenvolvedor Front-end</h2>
           <Link href="https://wa.me/message/EWNIIZZRWYKAK1">
-            <button className='flex flex-row bg-violet-600 rounded-full border-100 px-1 py-1 items-center'>
-            <p className="mr-[10px]">Converse comigo!!</p> 
+            <button className='flex object-scale-down bg-violet-600 rounded-full border-100 px-1 py-1 items-center mb-3'>
+            <p className="mr-[10px] sm:mr-[5px] sm:text-sm">Converse comigo!!</p> 
             
             <Image 
               src='/whatsapp.svg'
@@ -24,25 +24,32 @@ export default function MainSection() {
             </button>
           </Link>
         </div>
-      <div> {/* container da imagem que fica a direita */}
-        <Image src="/programming.png" alt="Laincore" width='500' height='500'
-         className='rounded-[15px] shadow-[1px_1px_5px] shadow-black border-[2.5px] border-black mb-5'
-         />
+      <div> 
+        <Link href='https://www.linkedin.com/in/robson-gerlach-2424aa238/'>
+          <Image 
+            src="/YuukiS.png" 
+            alt="YuukiS"
+            width='500'
+            height='500'
+            className='rounded-[15px] object-scale-down shadow-[1px_1px_5px] shadow-black border-[2.5px] border-black mb-5'
+          />
+        </Link>
       </div>
       </div>
-    <div>
-      <h1 className='flex flex-col items-center text-3xl bold'>Sobre mim</h1>
-      <div className='flex items-center justify-evenly'>
-      <p className='max-w-[500px] text-xl'>Atualmente venho me dedicando a iniciar na carreira de front end
+
+      {/* About Me Section */}
+    <div className="bg-[#A78BFA]/70">
+      <h1 className='text-3xl font-bold text-center'>Sobre mim</h1>
+      <div className='flex flex-col sm:flex-row items-center justify-evenly'>
+      <p className='max-w-[500px] sm:text-xm text-center text-sm mb-4 sm:mr-4 sm:mb-0'>Atualmente venho me dedicando a iniciar na carreira de front end
         trabalhando com React JS, estou tambem aprendendo varias ferramentas como 
         Tailwind, SASS, NextJS. Pretendo criar muitos projetos e aperfeiçoar minhas habilidades
         e me aprofundar ainda mais em desenvolvimento web!
       </p>
-        <Image className='object-scale-down' src='/konataokay.png' alt='Okay sign' width='400' height='400'></Image>
+        <Image className='object-scale-down self-end' src='/konataokay.png' alt='Okay sign' width='400' height='400'></Image>
       </div>
     </div>
     </section>
   )
 }
 /* #CFB3DA */
-
