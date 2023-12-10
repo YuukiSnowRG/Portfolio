@@ -6,10 +6,13 @@ import { JsonData } from '../../../data/data.json'
 
 export default function Projects({projects}:{ projects:JsonData["projects"] }) {
   return (
-    <section id="Projects">
-      <h1 className="flex flex-col items-center text-3xl bold my-5">Confira Abaixo alguns de meus Projetos!</h1>
+    <section className='laincore bg-cover bg-center bg-fixed' id="Projects">
+      <div className='flex flex-col bg-[#A78BFA]/45 items-center'>
+      <h1 className="text-3xl font-bold my-5 items-center ">Projetos</h1>
+
+      <h2 className="text-xl font-bold my-5 items-center ">Confira Abaixo alguns de meus Projetos!</h2>
       
-      <ul className='flex flex-row justify-center items-center flex-wrap gap-[35px]'>
+      <ul className='flex flex-row justify-items-center justify-center items-center flex-wrap gap-[35px]'>
         {projects?.map((project:JsonData["projects"][0]) =>(
           <li key={project.id}>
             <Link className='' href={project.link}>
@@ -21,6 +24,7 @@ export default function Projects({projects}:{ projects:JsonData["projects"] }) {
           </li>
         ))}
       </ul>
+      </div>
     </section>
   )
 }

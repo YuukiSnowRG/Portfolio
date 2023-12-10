@@ -7,7 +7,7 @@ import Link from 'next/link'
 export default function MainSection() {
   return (
     <section id="Home" className='osaker bg-cover bg-center mt-7 bg-fixed top-2'>
-      <div className="flex flex-col h-screen items-center justify-evenly  pt-11 bg-[#A78BFA]/70">
+      <div className="flex flex-col h-screen items-center justify-evenly  pt-11 bg-[#A78BFA]/60">
         <div className="flex flex-col text-center items-center"> 
           <h1 className="text-2xl font-bold">Olá sou Yuuki!</h1>
           <h2 className="text-md font-bold">Desenvolvedor Front-end</h2>
@@ -38,10 +38,10 @@ export default function MainSection() {
       </div>
 
       {/* About Me Section */}
-    <div className="bg-[#A78BFA]/70">
+    <div className="bg-[#A78BFA]/60">
       <h1 className='text-3xl font-bold text-center'>Sobre mim</h1>
       <div className='flex flex-col sm:flex-row items-center justify-evenly'>
-      <p className='max-w-[500px] sm:text-xm text-center text-sm mb-4 sm:mr-4 sm:mb-0'>Atualmente venho me dedicando a iniciar na carreira de front end
+      <p className='max-w-[500px] sm:text-xm text-center text-sm mb-4 sm:mr-4 sm:mb-0'>Atualmente venho me dedicando na carreira de front end
         trabalhando com React JS, estou tambem aprendendo varias ferramentas como 
         Tailwind, SASS, NextJS. Pretendo criar muitos projetos e aperfeiçoar minhas habilidades
         e me aprofundar ainda mais em desenvolvimento web!

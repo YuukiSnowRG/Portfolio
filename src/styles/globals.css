@@ -5,7 +5,7 @@
 
 body {
   font-family: "Cascadia Code";
-  /* background-color: rgb(167 139 250); */
+  background-color: rgb(167 139 250);
 }
 .shinytext > li > a:hover {
   text-shadow: 0px 0px 5px white, 0px 0px 5px white, 0px 0px 10px white,
@@ -14,4 +14,7 @@ body {
 }
 .osaker {
   background-image: url("/osaker.png");
+}
+.laincore {
+  background-image: url("/laincore.png");
 }
