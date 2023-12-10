@@ -65,9 +65,15 @@
     },
     {
       "id": "portfolio",
-      "title": "Esse mesmo Portfolio",
+      "title": "Esse proprio Portfolio",
       "link": "https://github.com/YuukiSnowRG/Portfolio",
       "image": "/portfolioinception.png"
+    },
+    {
+      "id": "captur-responsive",
+      "title": "Captur",
+      "link": "https://github.com/YuukiSnowRG/Captur",
+      "image": "/Captur.png"
     },
     {
       "id": "em-breve",

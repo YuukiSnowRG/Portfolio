@@ -13,7 +13,8 @@ export default function Header() {
   }
 
   return (
-      <header className='fixed top-0 left-0 z-10 justify-between w-full bg-[#A78BFA]'>
+      <header className='fixed top-0 left-0 z-10 justify-between w-full bg-[#A78BFA]
+      shadow-[1px_1px_5px] shadow-black border-b-[2.5px] border-black'>
       <div 
         className='text-xs md:text-lg lg:text-xl m-auto
         flex items-center justify-between ml-1 mt-1'>
@@ -39,9 +40,9 @@ export default function Header() {
             <div className={
             nav
             ?
-            'sm:hidden absolute top-[2.67rem] bottom-0 right-0 left-[60%] w-full h-[140px] bg-[#A78BFA] ease-in duration-300 shadow-[0_0px_5px_3px_rgba(0,0,0,0.7)]'
+            'sm:hidden absolute top-[2.8rem] bottom-0 right-0 left-[60%] w-full h-[140px] bg-[#A78BFA] ease-in duration-300 shadow-[0_0px_5px_3px_rgba(0,0,0,0.7)]'
             :
-            'sm:hidden absolute top-10 bottom-0 right-0 left-[110%] w-full h-[140px] ease-in duration-300'
+            'sm:hidden absolute top-[2.8rem] bottom-0 right-0 left-[110%] w-full h-[140px] ease-in duration-300'
             }>
             <ul className='text-xl ml-1 shinytext'>
               <li><Link href="#Home">Home</Link></li>

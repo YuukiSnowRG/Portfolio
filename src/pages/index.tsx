@@ -17,7 +17,7 @@ export default function Home({techs, projects, contacts}:Props) {
   return (
     <>
       <Header />
-      <MainSection/>
+      <MainSection contacts={contacts}/>
       <TechsComponent techs={techs} />
       <Projects projects={projects} />
       <Footer contacts={contacts} />
